@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule , Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 
 const appRoutes : Routes = [
   {
@@ -40,10 +41,12 @@ const appRoutes : Routes = [
     HomeComponent,
     CartComponent,
     LoginComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes,
       {enableTracing : true}
